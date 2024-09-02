@@ -1,5 +1,5 @@
 function resume() {
-    window.open("https://drive.google.com/file/d/1QwKluwmBYiBjgrqU-WirlQiFAn1PM5U2/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1NCHrslQ5gAN5iC_EDFhJOzvreJ82dL8U/view", "_blank");
 }
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
