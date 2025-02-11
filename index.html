@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./style/about.css">
   <link rel="stylesheet" href="./style/home.css">
   <link rel="stylesheet" href="./style/cursor.css">
+  <link rel="stylesheet" href="./style/experience.css">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -137,10 +138,29 @@
         </div>
       </div>
     </section>
+
+    <!-------------------- WORK EXPERIENCE ---------------------->
+    <section id="experience">
+      <h2 style="text-align: center;">
+        <span style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">03.</span> Work Experience
+      </h2>
+      <br>
+      <div id="experience-div" class="experience section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="experience-card">
+          <h3>Node.Js Backend Developer</h3>
+          <h4>LastPulse Company | Oct 2024 - Jan 2025</h4>
+          <p>Developed RESTful APIs using Node.js and Express.js, improving response time by 30%. Optimized SQL 
+            queries, reducing execution time by 40% for faster data retrieval. Implemented JWT-based 
+            authentication to enhance security, protecting sensitive data and user information.</p>
+        </div>
+      </div>
+    </section>
+
+
     <!-------------------- SKILLS ---------------------->
     <section id="skills">
       <h2 style="text-align: center;"><span
-          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">03.</span>Tech Stack</h2>
+          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">04.</span>Tech Stack</h2>
       <br>
       <div id="skills-div" class="about section" data-aos="fade-up" data-aos-duration="1000">
         <div class="skills-card">
@@ -183,10 +203,6 @@
           <img class="skills-card-img" src="./image/react.png" alt="" />
           <h5 class="skills-card-name">React.js</h5>
         </div>
-        <!-- <div class="skills-card">
-          <img class="skills-card-img" src="./image/aws.png" alt="" />
-          <h5 class="skills-card-name">AWS</h5>
-        </div> -->
         <div class="skills-card">
           <img style="color:white" class="skills-card-img" src="./image/socket.io.png" alt="" />
           <h5 class="skills-card-name">SOCKET.IO</h5>
@@ -214,13 +230,17 @@
             alt="" />
           <h5 class="skills-card-name">POSTMAN</h5>
         </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="data:image/png;base64,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" alt="" />
+          <h5 class="skills-card-name">TypeScript</h5>
+        </div>
       </div>
     </section>
     <br><br>
     <!-------------------- PROJECTS ---------------------->
     <section id="projects">
       <h2 style="text-align: center;"><span
-          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">04.</span>Projects</h2>
+          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">05.</span>Projects</h2>
       <div id="project-div">
         <br>
         <!-- 1 -->

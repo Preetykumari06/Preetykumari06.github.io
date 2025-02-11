@@ -1,0 +1,40 @@
+#experience {
+    padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#experience h2 {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+#experience-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid rgb(77, 77, 77);
+}
+
+.experience-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h3 {
+    color: rgb(70, 194, 239);
+    font-size: 22px;
+}
+
+.experience-card h4 {
+    font-size: 18px;
+    color: #666;
+}
+
+.experience-card p {
+    font-size: 16px;
+    color: whitesmoke;
+}
