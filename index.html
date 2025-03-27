@@ -26,7 +26,7 @@
    <script src="https://kit.fontawesome.com/d68d319f71.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -49,18 +49,18 @@
               style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">03.</span>Skills</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link experience" href="#experience" class="nav-link"><span
+              style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">04.</span>Experience</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link projects" href="#projects" class="nav-link"><span
-              style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">04.</span>Projects</a>
+              style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">05.</span>Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link contact" href="#contact" class="nav-link"><span
-              style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">05.</span>Contacts</a>
+              style="color: rgb(70, 194, 239); font-weight: 600; font-size: small;">06.</span>Contacts</a>
         </li>
-        <li class="nav-item" class="nav-link resume" id="resume">
-          <button onclick="resume()" id="resume-button-1"><a style="background-color:  rgb(70, 194, 239);;"
-              id="resume-link-1" href="./resume/PreetyKumari-NodeJSDeveloper.pdf" target="_blank"
-              download="Preety_Kumari_Resume">Resume</a></button>
-        </li>
+      
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -92,9 +92,20 @@
           <h1 id="user-detail-name"> I'm Preety </h1>
           <h1>Full Stack Web Developer</h1>
           <br>
-          <button onclick="resume()" id="resume-button-2"><a style="background-color:  rgb(70, 194, 239);;"
-              id="resume-link-2" href="./resume/PreetyKumari-NodeJSDeveloper.pdf" target="_blank"
-              download="Preety_Kumari_Resume">Resume</a></button>
+
+            <div id="resume-buttons">
+              <button id="resume-button-2">
+                <a href="https://drive.google.com/file/d/1vqya0tzQeDO4EAc88ipllVCgFLtL2KnU/view?usp=sharing" target="_blank">
+                  View Resume
+                </a>
+              </button>
+              <button id="resume-button-download">
+                <a href="./resume/Preety_Kumari_NodeJs_Resume.pdf" download="Preety_Kumari_Resume_NodeJs">
+                  Download Resume
+                </a>
+              </button>
+            </div>
+            
         </div>
         <div id="home_2" data-aos="fade-up" data-aos-duration="1000"><img src="./image/preety_pic.png" class="home-img"
             alt="#" /></div>
@@ -139,28 +150,10 @@
       </div>
     </section>
 
-    <!-------------------- WORK EXPERIENCE ---------------------->
-    <section id="experience">
-      <h2 style="text-align: center;">
-        <span style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">03.</span> Work Experience
-      </h2>
-      <br>
-      <div id="experience-div" class="experience section" data-aos="fade-up" data-aos-duration="1000">
-        <div class="experience-card">
-          <h3>Node.Js Backend Developer</h3>
-          <h4>LastPulse Company | Oct 2024 - Jan 2025</h4>
-          <p>Developed RESTful APIs using Node.js and Express.js, improving response time by 30%. Optimized SQL 
-            queries, reducing execution time by 40% for faster data retrieval. Implemented JWT-based 
-            authentication to enhance security, protecting sensitive data and user information.</p>
-        </div>
-      </div>
-    </section>
-
-
     <!-------------------- SKILLS ---------------------->
     <section id="skills">
       <h2 style="text-align: center;"><span
-          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">04.</span>Tech Stack</h2>
+          style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">03.</span>Tech Stack</h2>
       <br>
       <div id="skills-div" class="about section" data-aos="fade-up" data-aos-duration="1000">
         <div class="skills-card">
@@ -237,6 +230,25 @@
       </div>
     </section>
     <br><br>
+    <!-------------------- WORK EXPERIENCE ---------------------->
+    <section id="experience">
+      <h2 style="text-align: center;">
+        <span style="color: rgb(70, 194, 239); font-weight: 600; font-size: medium;">04.</span> Work Experience
+      </h2>
+      <br>
+      <div id="experience-div" class="experience section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="experience-card">
+          <h3>Node.js Backend Developer</h3>
+          <h4>LastPulse,                Gurugram,Haryana | Oct 2024 - Jan 2025</h4>
+          <ol>
+            <li>1. Developed and maintained backend APIs for manufacturing, procurement, and warehousing operations using Node.js, Express, and MySQL.</li>
+            <li>2. Implemented authentication and security features using JWT and role-based access control (RBAC) for secure user management.</li>
+            <li>3. Integrated third-party services like Firebase for authentication and AWS S3 for file storage.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
     <!-------------------- PROJECTS ---------------------->
     <section id="projects">
       <h2 style="text-align: center;"><span
@@ -268,6 +280,27 @@
         </div>
         <br>
         <!-- 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <!-- <title class="project-title">QR Bot</title> -->
+          <div class="project-card-img"><img src="./image/real-time-tracker-img.png" alt="error"></div>
+          <div class="project-card-details">
+            <h3 class="project-title">Real-Time-Location-Tracker</h3>
+            <p class="project-description">Real-time Location Tracking Application. It allows users to share their live location and view other connected users on an interactive map.</p>
+            <div class="project-tech-stack">
+              <img src="./image/nodejs_logo.png" alt="" />
+              <img style="background-color: aliceblue;" src="./image/expressjs2.png" alt="" />
+              <img style="border: 0.5px solid white;" src="./image/socket.io.png" alt="" />
+            </div>
+            <div class="project-card-links"><a class="project-github-link"
+                href="https://github.com/Preetykumari06/Real-Time-Location-Tracker" target="_blank"><i
+                  class="fa-brands fa-github"></i></a>
+              <a class="project-deployed-link" href="https://real-time-location-tracker-58pc.onrender.com/" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <br>
+         <!-- 3 -->
         <div class="project-card">
           <title class="project-title">WellnessWave</title>
           <div class="project-card-img"><img src="./image/wellnesswavehome.png" alt=""></div>
@@ -291,7 +324,7 @@
           </div>
         </div>
          <br>
-         <!-- 3 -->
+         <!-- 4 -->
         <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
           <!-- <title class="project-title">HomeDecor</title> -->
           <div class="project-card-img"><img
@@ -317,7 +350,7 @@
           </div>
         </div>
         <br>
-        <!-- 4 -->
+        <!-- 5 -->
         <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
           <!-- <title class="project-title">QR Bot</title> -->
           <div class="project-card-img"><img src="./image/adventour.pic.png" alt=""></div>
@@ -346,37 +379,7 @@
       </div>
     </section>
     <br>
-    <!-------------------- GitHUB ---------------------->
-     <section class="react-activity-calendar">
-      <h2><span style="color: rgb(70, 194, 239); font-weight: 600; font-size: larger;">G</span>itHub-Activity-Calendar
-      </h2>
-      <br>
-      <div class="calendar" data-aos="fade-up" data-aos-duration="1000">
-        <!-- Loading the data just for you. -->
-       </div>
-      <br>
-      <h2><span style="color: rgb(70, 194, 239); font-weight: 600; font-size: larger;">G</span>ithub Stats</h2>
-      <br>
-      <div id="git-stat">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=Preetykumari06&theme=react&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-            alt="streakstat" />
-        </div>
-        <br>
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <img id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=Preetykumari06&count_private=true&theme=react"
-            alt="stat-card" />
-        </div>
-        <br>
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <img id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Preetykumari06&theme=react&layout=compact"
-            alt="top_languages" />
-        </div>
-      </div>
-    </section> 
+    
     <!-------------------- CONTACTS ---------------------->
     <section id="contact">
       <div id="contact-div">
@@ -407,7 +410,7 @@
 <script>
 
   function resume() {
-    window.open("https://drive.google.com/file/d/154gQ4kzIpx8WXQ1Imi8r1ZZfdJRYTnIp/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1vqya0tzQeDO4EAc88ipllVCgFLtL2KnU/view?usp=sharing", "_blank");
   }
   document.getElementById('contact-phone').addEventListener('click', () => {
     alert('☎ +91 7979911769')

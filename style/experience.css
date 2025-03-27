@@ -1,6 +1,6 @@
 #experience {
     padding-top: 50px;
-  padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 #experience h2 {
@@ -22,19 +22,24 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
 }
 
 .experience-card h3 {
     color: rgb(70, 194, 239);
     font-size: 22px;
+    padding-left: 20px;
 }
 
 .experience-card h4 {
     font-size: 18px;
     color: #666;
+    padding-left: 20px;
 }
 
-.experience-card p {
+.experience-card ol {
     font-size: 16px;
-    color: whitesmoke;
+    color: #333;
+    padding-left: 20px; /* Ensures proper indentation */
+    line-height: 1.6;
 }
